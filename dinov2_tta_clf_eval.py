@@ -85,7 +85,6 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         "--reg", action="store_true", help="Load register-token variant (_reg)"
     )
-    p.add_argument("--api", action="store_true", help="Hide model as if it was an API.")
     return p.parse_args()
 
 
@@ -148,7 +147,6 @@ def main() -> None:
             "optimizer_config": optimizer_configs[args.optim_config],
             "dataset_config": dataset_configs[args.dataset_config],
             "reg": args.reg,
-            "api": args.api,
         },
     )
     results = evaluator.evaluate(val_loader)
