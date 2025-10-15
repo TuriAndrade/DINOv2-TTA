@@ -1,0 +1,26 @@
+# Clean datasets
+python3 dinov2_clf_eval.py --out-dir ./results/dinov2_vitl14_lc/no_adapt --dataset-config imagenet/val --out-name val
+python3 dinov2_clf_eval.py --out-dir ./results/dinov2_vitl14_lc/no_adapt --dataset-config imagenet/r --out-name r
+
+# ---- Blur ----
+python3 dinov2_clf_eval.py --out-dir ./results/dinov2_vitl14_lc/no_adapt --dataset-config imagenet/c/defocus_blur --out-name defocus_blur
+python3 dinov2_clf_eval.py --out-dir ./results/dinov2_vitl14_lc/no_adapt --dataset-config imagenet/c/glass_blur --out-name glass_blur
+python3 dinov2_clf_eval.py --out-dir ./results/dinov2_vitl14_lc/no_adapt --dataset-config imagenet/c/motion_blur --out-name motion_blur
+python3 dinov2_clf_eval.py --out-dir ./results/dinov2_vitl14_lc/no_adapt --dataset-config imagenet/c/zoom_blur --out-name zoom_blur
+
+# ---- Digital ----
+python3 dinov2_clf_eval.py --out-dir ./results/dinov2_vitl14_lc/no_adapt --dataset-config imagenet/c/contrast --out-name contrast
+python3 dinov2_clf_eval.py --out-dir ./results/dinov2_vitl14_lc/no_adapt --dataset-config imagenet/c/elastic_transform --out-name elastic_transform
+python3 dinov2_clf_eval.py --out-dir ./results/dinov2_vitl14_lc/no_adapt --dataset-config imagenet/c/jpeg_compression --out-name jpeg_compression
+python3 dinov2_clf_eval.py --out-dir ./results/dinov2_vitl14_lc/no_adapt --dataset-config imagenet/c/pixelate --out-name pixelate
+
+# ---- Noise ----
+python3 dinov2_clf_eval.py --out-dir ./results/dinov2_vitl14_lc/no_adapt --dataset-config imagenet/c/gaussian_noise --out-name gaussian_noise
+python3 dinov2_clf_eval.py --out-dir ./results/dinov2_vitl14_lc/no_adapt --dataset-config imagenet/c/impulse_noise --out-name impulse_noise
+python3 dinov2_clf_eval.py --out-dir ./results/dinov2_vitl14_lc/no_adapt --dataset-config imagenet/c/shot_noise --out-name shot_noise
+
+# ---- Weather ----
+python3 dinov2_clf_eval.py --out-dir ./results/dinov2_vitl14_lc/no_adapt --dataset-config imagenet/c/brightness --out-name brightness
+python3 dinov2_clf_eval.py --out-dir ./results/dinov2_vitl14_lc/no_adapt --dataset-config imagenet/c/fog --out-name fog
+python3 dinov2_clf_eval.py --out-dir ./results/dinov2_vitl14_lc/no_adapt --dataset-config imagenet/c/frost --out-name frost
+python3 dinov2_clf_eval.py --out-dir ./results/dinov2_vitl14_lc/no_adapt --dataset-config imagenet/c/snow --out-name snow
